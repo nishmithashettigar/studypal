@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.11.0",
     "chart.js": "^4.5.0",
+    "firebase": "^12.0.0",
     "lucide-react": "^0.536.0",
     "openai": "^5.11.0",
     "react": "^19.1.1",
