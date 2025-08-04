@@ -1,6 +1,6 @@
 # StudyPal 📚✨
 
-StudyPal is a web-based study management app designed to help create study plans, track progress, and get assistance from an AI-powered StudyPal Assistant.
+StudyPal is a web-based study management app designed to helps to create study plans, track progress, and get assistance from an AI-powered StudyPal Assistant.
 
 ## 🚀 Features
 
