@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../firebaseConfig';
-import { auth } from '../firebaseConfig';
+
 
 
 const PlannerForm = ({ onPlanSaved }) => {
@@ -12,7 +12,7 @@ const PlannerForm = ({ onPlanSaved }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, "studyPlans"), { subject, topics, deadline, progress: 0, userId: auth.currentUser.uid });
+      await addDoc(collection(db, "studyPlans"), { subject, topics, deadline, progress: 0 });
       alert("Plan saved successfully!");
       setSubject('');
       setTopics('');
