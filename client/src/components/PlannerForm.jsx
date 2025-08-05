@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../firebaseConfig';
+import { auth } from '../firebaseConfig';
+
 
 const PlannerForm = ({ onPlanSaved }) => {
   const [subject, setSubject] = useState('');
