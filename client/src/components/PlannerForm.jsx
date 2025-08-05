@@ -10,7 +10,7 @@ const PlannerForm = ({ onPlanSaved }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, "studyPlans"), { subject, topics, deadline, progress: 0 });
+      await addDoc(collection(db, "studyPlans"), { subject, topics, deadline, progress: 0, userId: auth.currentUser.uid });
       alert("Plan saved successfully!");
       setSubject('');
       setTopics('');
